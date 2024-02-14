@@ -37,29 +37,29 @@
       width: 80%;
     }
 
-    .header {
+    .header, .footer {
       position: absolute;
+      color: white;
+      font-size: 2vw;
+    }
+
+    .header {
       top: 2%;
       left: 2%;
-      font-size: 2.5vw;
-      color: white;
+    }
+
+    .footer {
+      bottom: 2%;
+      left: 2%;
     }
 
     .w3-jumbo {
-      font-size: 8vw;
+      font-size: 6vw;
       margin-bottom: 10px;
     }
 
     .w3-large {
-      font-size: 3vw;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 2%;
-      left: 2%;
-      font-size: 1.5vw;
-      color: white;
+      font-size: 2vw;
     }
 
     .button {
@@ -82,17 +82,21 @@
     }
 
     @media only screen and (max-width: 768px) {
+      .header, .footer {
+        font-size: 4vw;
+      }
+
       .w3-jumbo {
-        font-size: 5vw;
+        font-size: 10vw;
       }
 
       .w3-large {
-        font-size: 2vw;
+        font-size: 4vw;
       }
 
       .button {
-        font-size: 2vw;
-        padding: 1.5vw 3vw;
+        font-size: 4vw;
+        padding: 3vw 6vw;
       }
     }
   </style>
