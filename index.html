@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>RexServer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://r4.wallpaperflare.com/wallpaper/217/807/693/render-video-games-minecraft-wallpaper-89c0a84d910abddbd6b7f81fd0f1169d.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RexServer</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <style>
+    body, h1 {
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .bgimg {
+      background-image: url('https://r4.wallpaperflare.com/wallpaper/217/807/693/render-video-games-minecraft-wallpaper-89c0a84d910abddbd6b7f81fd0f1169d.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      width: 80%;
+    }
+
+    .w3-jumbo {
+      font-size: 4em;
+    }
+
+    .w3-large {
+      font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .w3-jumbo {
+        font-size: 2.5em;
+      }
+
+      .w3-large {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    REX SERVER
+  <div class="bgimg">
+    <div class="content">
+      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">Coming After Board Exams</p>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+      Powered by Cloudflare
+    </div>
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Coming After Board Exams</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by Cloudflare
-  </div>
-</div>
-  
+
 </body>
 </html>
