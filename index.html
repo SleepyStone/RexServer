@@ -61,6 +61,21 @@
       color: white;
     }
 
+    .button {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
     @media only screen and (max-width: 768px) {
       .w3-jumbo {
         font-size: 2.5em;
@@ -82,6 +97,7 @@
       <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
       <hr class="w3-border-grey" style="margin:auto;width:40%">
       <p class="w3-large w3-center">Coming After Board Exams</p>
+      <a href="https://example.com" class="button">Join Our Community</a>
     </div>
     <div class="footer">
       Powered by Cloudflare
