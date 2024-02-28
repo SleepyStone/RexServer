@@ -11,11 +11,13 @@ header {
   text-align: center;
 }
 
+
 .hero {
   background-image: url('https://r4.wallpaperflare.com/wallpaper/217/807/693/render-video-games-minecraft-wallpaper-89c0a84d910abddbd6b7f81fd0f1169d.jpg');
-  background-size: cover;
+  background-size: cover;           /* Key for full coverage */
   background-position: center;
-  min-height: 350px; /* Adjust as needed */
+  background-repeat: no-repeat;     /* Prevents image repetition */
+  min-height: 100vh;                /* Ensures viewport height coverage */
   display: flex;
   flex-direction: column;
   align-items: center;
