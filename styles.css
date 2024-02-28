@@ -11,16 +11,15 @@ header {
   text-align: center;
 }
 
-
 .hero {
   background-image: url('https://r4.wallpaperflare.com/wallpaper/217/807/693/render-video-games-minecraft-wallpaper-89c0a84d910abddbd6b7f81fd0f1169d.jpg');
-  background-size: cover;           /* Key for full coverage */
+  background-size: cover;           
   background-position: center;
-  background-repeat: no-repeat;     /* Prevents image repetition */
-  min-height: 100vh;                /* Ensures viewport height coverage */
+  background-repeat: no-repeat;     
+  min-height: 100vh;                
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;   
   justify-content: center;
   text-align: center;
   color: white;
@@ -30,6 +29,9 @@ header {
 .hero h2 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 2s steps(30, end); 
 }
 
 .hero p {
@@ -53,11 +55,16 @@ header {
 }
 
 footer {
-  background-color: #333; /* Slightly lighter footer */
+  background-color: #333; 
   color: white;
   text-align: center;
   padding: 10px;
-  position: absolute; /* To stick to the bottom */
+  position: absolute; 
   bottom: 0;
   width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
