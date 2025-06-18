@@ -26,7 +26,6 @@ header {
   padding: 20px;
 }
 
-/* Centering fix within the flex layout */
 .hero h2 { 
   font-size: 2.5em; 
   margin-bottom: 10px;  
@@ -62,8 +61,7 @@ footer {
   width: 100%;
 }
 
-/* Letter-by-letter animation */
-.hero h2 > span { /* Updated targeting */
+.hero h2 > span { 
   overflow: hidden;
   display: inline-block;
   animation: typing 2s steps(30, end) forwards;
@@ -71,7 +69,6 @@ footer {
 
 .hero h2 > span:nth-child(1) { animation-delay: 0.1s; }
 .hero h2 > span:nth-child(2) { animation-delay: 0.2s; }
-/* ... and so on */
 
 @keyframes typing {
   from { width: 0 }
